@@ -33,7 +33,7 @@
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
         <DebugType>pdbonly</DebugType>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
     
