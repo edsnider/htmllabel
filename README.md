@@ -1,7 +1,7 @@
 # HTML Label for Xamarin.Forms apps
 
 [![Build status](https://dev.azure.com/edsnider/htmllabel/_apis/build/status/htmllabel-CI)](https://dev.azure.com/edsnider/htmllabel/_build/latest?definitionId=4)
-[![MyGet](https://img.shields.io/myget/edsnider/vpre/Xam.Plugins.Forms.HtmlLabel.svg)](https://www.myget.org/feed/edsnider/package/nuget/Xam.Plugins.Forms.HtmlLabel)
+[![MyGet](https://img.shields.io/myget/edsnider/vpre/Xam.Plugins.Forms.HtmlLabel.svg?label=myget)](https://www.myget.org/feed/edsnider/package/nuget/Xam.Plugins.Forms.HtmlLabel)
 
 Easily render HTML in your Xamarin.Forms apps.
 
