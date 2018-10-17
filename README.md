@@ -2,6 +2,7 @@
 
 [![Build status](https://dev.azure.com/edsnider/htmllabel/_apis/build/status/htmllabel-CI)](https://dev.azure.com/edsnider/htmllabel/_build/latest?definitionId=4)
 [![MyGet](https://img.shields.io/myget/edsnider/vpre/XamForms.HtmlLabel.svg?label=myget)](https://www.myget.org/feed/edsnider/package/nuget/XamForms.HtmlLabel)
+[![NuGet](https://img.shields.io/nuget/v/XamForms.HtmlLabel.svg?label=nuget)](https://www.nuget.org/packages/XamForms.HtmlLabel)
 
 Easily render HTML in your Xamarin.Forms apps.
 
