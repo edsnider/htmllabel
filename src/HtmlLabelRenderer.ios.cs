@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using Foundation;
-using Plugins.Forms.HtmlLabel;
+using XamForms.HtmlLabel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(HtmlLabel), typeof(HtmlLabelIosRenderer))]
-namespace Plugins.Forms.HtmlLabel
+namespace XamForms.HtmlLabel
 {
     public class HtmlLabelIosRenderer : ViewRenderer<HtmlLabel, HtmlUITextView>
     {

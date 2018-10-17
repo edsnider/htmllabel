@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins.Forms.HtmlLabel", "Plugins.Forms.HtmlLabel.csproj", "{0B1C22B6-A38E-4DB1-938C-C283A671A935}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.HtmlLabel", "XamForms.HtmlLabel.csproj", "{0B1C22B6-A38E-4DB1-938C-C283A671A935}"
 EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution

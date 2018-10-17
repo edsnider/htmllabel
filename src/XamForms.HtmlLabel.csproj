@@ -3,12 +3,12 @@
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;xamarin.ios10;monoandroid71</TargetFrameworks>
 
-        <AssemblyName>Plugins.Forms.HtmlLabel</AssemblyName>
-        <RootNamespace>Plugins.Forms.HtmlLabel</RootNamespace>
+        <AssemblyName>XamForms.HtmlLabel</AssemblyName>
+        <RootNamespace>XamForms.HtmlLabel</RootNamespace>
 
         <!-- NuGet package info -->
-        <PackageId>Xam.Plugins.Forms.HtmlLabel</PackageId>
-        <Title>HTML Label Plugin for Xamarin.Forms</Title>
+        <PackageId>XamForms.HtmlLabel</PackageId>
+        <Title>HTML Label for Xamarin.Forms</Title>
         <PackageVersion>0.1.0</PackageVersion>
         <Authors>edsnider</Authors>
         <Owners>edsnider</Owners>
@@ -17,10 +17,9 @@
         <RepositoryUrl>https://github.com/edsnider/htmllabel</RepositoryUrl>
         <PackageIconUrl>https://raw.githubusercontent.com/edsnider/htmllabel/master/art/icon.png</PackageIconUrl>
         <Description>Easily render HTML in your Xamarin.Forms apps (iOS and Android only).</Description>
-        <PackageTags>xamarin, xamarin.forms, html, label, ios, android, xamarin.ios, xamarin.android, mobile, xam.plugins, plugins</PackageTags>
+        <PackageTags>xamarin, xamarin.forms, html, label, ios, android, xamarin.ios, xamarin.android, mobile, xam.plugins, plugins, plugin, formsplugin, xamforms, control</PackageTags>
         <PackageReleaseNotes>https://github.com/edsnider/htmllabel/blob/master/CHANGELOG.md</PackageReleaseNotes>
         
-
         <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
         <DefineConstants>$(DefineConstants);</DefineConstants>
     </PropertyGroup>

@@ -8,7 +8,7 @@ using Android.Content;
 using Android.Widget;
 #endif
 
-namespace Plugins.Forms.HtmlLabel
+namespace XamForms.HtmlLabel
 {
     public class HtmlLabel : Label 
     {

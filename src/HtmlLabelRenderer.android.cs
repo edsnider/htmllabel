@@ -2,12 +2,12 @@
 using System.ComponentModel;
 using Android.Content;
 using Android.Text;
-using Plugins.Forms.HtmlLabel;
+using XamForms.HtmlLabel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(HtmlLabel), typeof(HtmlLabelAndroidRenderer))]
-namespace Plugins.Forms.HtmlLabel
+namespace XamForms.HtmlLabel
 {
     public class HtmlLabelAndroidRenderer : ViewRenderer<HtmlLabel, HtmlTextView>
     {
