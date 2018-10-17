@@ -29,7 +29,7 @@ The value of the `Text` property will be rendered as HTML using the platform's n
 ```xaml
 <ContentPage 
     ...  
-    xmlns:plugins="clr-namespace:Plugins.Forms.HtmlLabel;assembly=Plugins.Forms.HtmlLabel">
+    xmlns:controls="clr-namespace:XamForms.HtmlLabel;assembly=XamForms.HtmlLabel">
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" WidthRequest="250">
         
@@ -37,7 +37,7 @@ The value of the `Text` property will be rendered as HTML using the platform's n
         <Entry Text="" Placeholder="Password" />
         <Button Text="Sign in" BackgroundColor="Purple" TextColor="White" />
         
-        <plugins:HtmlLabel Text="Upon sign in you agree to our &lt;a href='http://www.infernored.com'&gt;Terms of Service&lt;/a&gt; and &lt;a href='http://www.infernored.com'&gt;Privacy Policy&lt;/a&gt;." />
+        <controls:HtmlLabel Text="Upon sign in you agree to our &lt;a href='http://www.infernored.com'&gt;Terms of Service&lt;/a&gt; and &lt;a href='http://www.infernored.com'&gt;Privacy Policy&lt;/a&gt;." />
 
     </StackLayout>
 
