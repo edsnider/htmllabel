@@ -38,6 +38,12 @@ namespace XamForms.HtmlLabel
 
         void UpdateText()
         {
+            if (string.IsNullOrWhiteSpace(Element?.Text))
+            {
+                Control.Text = string.Empty;
+                return;
+            }
+
             NSError error = null;
             Control.AttributedText = new NSAttributedString(NSData.FromString(Element.Text), 
                                                             new NSAttributedStringDocumentAttributes { DocumentType = NSDocumentType.HTML }, 

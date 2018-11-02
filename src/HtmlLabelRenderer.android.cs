@@ -38,6 +38,12 @@ namespace XamForms.HtmlLabel
 
         void UpdateText()
         {
+            if (string.IsNullOrWhiteSpace(Element?.Text))
+            {
+                Control.Text = string.Empty;
+                return;
+            }
+
             Control.TextFormatted = Html.FromHtml(Element.Text, FromHtmlOptions.ModeCompact);
             Control.MovementMethod = Android.Text.Method.LinkMovementMethod.Instance;
         }
