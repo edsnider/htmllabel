@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using Android.Content;
 using Android.Text;
+using Android.OS;
 using XamForms.HtmlLabel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -44,7 +45,12 @@ namespace XamForms.HtmlLabel
                 return;
             }
 
-            Control.TextFormatted = Html.FromHtml(Element.Text, FromHtmlOptions.ModeCompact);
+            Control.TextFormatted = Build.VERSION.SdkInt >= BuildVersionCodes.N
+                ? Html.FromHtml(Element.Text, FromHtmlOptions.ModeCompact)
+#pragma warning disable CS0618 // Type or member is obsolete
+                : Html.FromHtml(Element.Text);
+#pragma warning restore CS0618 // Type or member is obsolete
+
             Control.MovementMethod = Android.Text.Method.LinkMovementMethod.Instance;
         }
     }
