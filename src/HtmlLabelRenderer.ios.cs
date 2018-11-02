@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using Foundation;
+using UIKit;
 using XamForms.HtmlLabel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -8,18 +9,21 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(HtmlLabel), typeof(HtmlLabelIosRenderer))]
 namespace XamForms.HtmlLabel
 {
-    public class HtmlLabelIosRenderer : ViewRenderer<HtmlLabel, HtmlUITextView>
+    public class HtmlLabelIosRenderer : ViewRenderer<HtmlLabel, UITextView>
     {
         protected override void OnElementChanged(ElementChangedEventArgs<HtmlLabel> e)
         {
-            base.OnElementChanged(e);
-
-            if (Control == null)
+            if (e.NewElement != null)
             {
-                SetNativeControl(new HtmlUITextView());
+                if (Control == null)
+                {
+                    SetNativeControl(new UITextView());
+                }
+
+                UpdateText();
             }
 
-            UpdateText();
+            base.OnElementChanged(e);
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

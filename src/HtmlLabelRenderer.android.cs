@@ -9,23 +9,21 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(HtmlLabel), typeof(HtmlLabelAndroidRenderer))]
 namespace XamForms.HtmlLabel
 {
-    public class HtmlLabelAndroidRenderer : ViewRenderer<HtmlLabel, HtmlTextView>
+    public class HtmlLabelAndroidRenderer : LabelRenderer
     {
         public HtmlLabelAndroidRenderer(Context context)
             : base(context)
         {
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<HtmlLabel> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
             base.OnElementChanged(e);
 
-            if (Control == null)
+            if (Control != null && e.NewElement != null)
             {
-                SetNativeControl(new HtmlTextView(Context));
+                UpdateText();
             }
-
-            UpdateText();
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
