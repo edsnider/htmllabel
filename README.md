@@ -10,7 +10,7 @@ Easily render HTML in your Xamarin.Forms apps.
 
 ## Dependency
 
-- Xamarin.Forms >= 3.2.0.871581
+- Xamarin.Forms >= 3.0.0.446417
 
 ## Supported platforms
 
@@ -40,10 +40,15 @@ The value of the `Text` property will be rendered as HTML using the platform's n
         
         <controls:HtmlLabel Text="Upon sign in you agree to our &lt;a href='http://www.infernored.com'&gt;Terms of Service&lt;/a&gt; and &lt;a href='http://www.infernored.com'&gt;Privacy Policy&lt;/a&gt;." />
 
+        <!-- Or, with data binding -->
+        <controls:HtmlLabel Text="{Binding SignInAgreementText}" />
+
     </StackLayout>
 
 </ContentPage>
 ```
+
+When using this control in XAML it is recommended you use [XAMLC](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/xamlc).
 
 ### C# example
 ```csharp
